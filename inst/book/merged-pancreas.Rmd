@@ -215,7 +215,7 @@ This suggests that we have removed most of the donor effect, which simplifies th
 
 ```{r tsne-pancreas-mnn-donor-all, fig.width=10, fig.asp=0.5, fig.cap="$t$-SNE plots of the four pancreas datasets after donor-level correction with `fastMNN()`. Each point represents a cell and is colored according to the batch of origin (left) or the donor of origin for the Segerstolpe-derived cells (right). The cluster label is shown at the median location across all cells in the cluster."}
 library(scater)
-g <- buildSNNGraph(multiout, use.dimred=1, k=20)
+g <- buildSNNGraph(multiout, use.dimred=1, k=50)
 clusters <- igraph::cluster_walktrap(g)$membership
 tab <- table(clusters, multiout$dataset)
 tab
