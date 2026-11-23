@@ -1,6 +1,6 @@
 Package: OSCA.multisample
 Title: OSCA for Multiple Samples
-Version: 1.21.1
+Version: 1.22.0
 Date: 2026-08-28
 Authors@R: c( 
         person('Robert', 'Amezquita', role = c('aut')), 
